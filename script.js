@@ -158,8 +158,12 @@ document.querySelector('.fixedMe').style.display='none'
 document.querySelector('#startGame').addEventListener('click',function(){
 	setTimeout(function(){
 	document.querySelector('#man').style.display='block'
-		document.querySelector('.fixedMe').style.display='block'
+		 
 	},1000)
+	setTimeout(function(){
+	 
+		document.querySelector('.fixedMe').style.display='block'
+	},2500)
 })
 
 
