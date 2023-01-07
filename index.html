@@ -165,7 +165,15 @@
 
     
     <div class='fixedMe'></div>
- 
+<div style='height:0;width:0;opacity:0'>
+    <audio src="bgm.mp3" autoplay></audio>
+</div>
+<script>
+  window.onload = function() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+</script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
