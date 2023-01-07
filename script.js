@@ -181,10 +181,12 @@ var otherRect = otherDiv.getBoundingClientRect();
 if (fixedRect.top < otherRect.bottom && fixedRect.bottom > otherRect.top) {
   // The fixed position div is overlapping the other div
   // Do something here, such as adding a class to the fixed position div
+	console.log('overlapping')
   otherDiv.classList.add('overlap');
 } else {
   // The fixed position div is not overlapping the other div
   // Do something here, such as removing the class from the fixed position div
+		console.log('not overlapping')
   otherDiv.classList.remove('overlap');
 }
 
