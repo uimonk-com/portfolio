@@ -194,7 +194,7 @@ animation:boom 1s linear infinite }
 .rev_manAnimation{
     background: url('rev-uimonk.png') no-repeat;
     animation: walkRev 1s  infinite steps(8);
-   
+   width:85px;
 }
 
 @keyframes walkRev {
