@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    flex-wrap: nowrap; */
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    width: 100vw; 
+    position: relative; 
+ overflow: hidden;  
+ background-color: black;
+
+}
+
+.outer_wrapper{
+    width: 100vw;
+    height: 206vh;
+    transform: rotate(-90deg);
+    /* transform-origin: top top; */
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+}
+.wrapper{
+    width: 696vw;
+    height: 206vh;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.slide{
+    background: url('mario.jpg');
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 0px;
+}
+
+.first_section{
+    
+  
+}
+
+.second_section{
+    background: url('mario.jpg');
+    background-size: 100% 100%;
+}
+.slide2{
+    background: url('slide2.jpg');
+    background-size: 100% 100%;
+}
+
+.third_section{
+    background: url('slide3.jpg');
+    background-size: 100% 100%;
+}
+
+.four_section{
+    background: url('slide4.jpg');
+    background-size: 100% 100%;
+}
+
+.four_section2{
+    background: url('slide5.jpg');
+    background-size: 100% 100%;
+}
+
+.third_section2{
+    background: url('mario.jpg');
+    background-size: 100% 100%;
+}
+
+.bodyAnimation{
+    animation: bgMove 10s forwards linear infinite;
+}
+
+.start_intro{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   background: url('intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.start_intro img{
+    position: absolute;
+    right: -4%;
+    bottom: 0;
+    width: 30%;
+}
+.start_intro button{
+    padding: 20px;
+ margin-bottom: 5% ;
+ font-size: 2rem;
+ padding: 10px 30px;
+ background: #6db10e;
+ border:0;
+ text-transform:uppercase;
+ cursor: pointer;
+ font-family: 'Anton', sans-serif;
+ color: white;
+ /* box-shadow: 1px 1px 20px 2px white; */
+}
+
+.commingSoon{
+    width: 600px;;
+    padding: 20px;
+    margin-top: 5% ;
+    font-size: 1rem;
+    padding: 10px 30px;
+    background: #a6b10e;
+    border:0;
+    text-transform:uppercase;
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    text-shadow: 1px 1px 1px black;
+  
+}
+.start_intro h1{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+    position: relative;
+    left: -5%;
+    font-size: 5rem;
+     
+    color: #fbbbaf;
+   
+    color: #fbbbaf;
+    font-weight: 900;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 30px; 
+}
+
+
+@keyframes bgMove {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -2560px;
+    }
+}
+
+
+
+.man{
+    background: url('uimonk.png') no-repeat;
+    width: 99px;
+    height: 200px;
+    margin: auto;
+    
+    position: absolute;
+    bottom: 12.5%;
+    left: 15%;
+}
+
+.manAnimation{
+    animation: walk 1s  infinite steps(8);
+}
+
+.rev_manAnimation{
+    background: url('rev-uimonk.png') no-repeat;
+    animation: walkRev 1s  infinite steps(8);
+    width: 80px;
+}
+
+@keyframes walkRev {
+    0%{
+        background-position: -769px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+
+
+
+@keyframes walk {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -759px;
+    }
+}
+
+.commingSoon{
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+
+
+/* #################################################### Second Section ################################################## */
+
+
+
+
+
+.second_section {
+display: flex;
+align-items: flex-start;
+justify-content: center;
+
+}
+
+.second_section  .holder{
+    animation: move 3s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.second_section  .holder .row{
+    display: flex;
+    width: 70%;
+}
+.second_section  .holder .row .col{
+    width: 33%;
+    text-align: center;
+}
+
+.second_section img{
+    width: 90%;
+ 
+}
+
+.second_section button{
+    padding: 20px;
+    background: linear-gradient(45deg, #7fce0f, #085701);
+    color: white;
+    border-color: white;
+    position: relative;
+    left: -39%;
+    transform: skew(15deg, -12deg) translate(32px, -39px);
+    top: -23%!important;
+    z-index: 9999;
+    cursor: pointer;
+    animation: scaleIt 3s linear infinite;
+}
+
+@keyframes move{
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(40px);}
+    100%{transform: translateY(10px);}
+}
+
+
+@keyframes scaleIt{
+    0%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+    50%{transform: scale(0.8) skew(15deg, -12deg) translate(32px, -39px);}
+    100%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+}
+
+
+
+/* #################################################### Third Section ################################################## */
+
+.third_section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    
+    }
+
+    .third_section2  .holder .row{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+     
+    }
+    .third_section2  .holder .row .col{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .third_section2 img{
+        width: 100%;
+     
+    }
+    
+    .third_section  .holder{
+        animation: move 3s linear infinite
+    }
+    
+    .third_section img{
+        width: 40%;
+     
+    }
+    
+    .third_section button{
+        padding: 20px;
+        background: linear-gradient(45deg, #f34139, #fd0202);
+        color: white;
+        border-color: white;
+        position: relative;
+        left: -39%;
+        transform: skew(15deg, -12deg) translate(32px, -39px);
+        top: -23%!important;
+        z-index: 9999;
+        cursor: pointer;
+        animation: scaleIt 3s linear infinite;
+    }
+    
+    @keyframes move{
+        0%{transform: translateY(10px);}
+        50%{transform: translateY(40px);}
+        100%{transform: translateY(10px);}
+    }
+    
+    
+    @keyframes scaleIt{
+        0%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+        50%{transform: scale(0.8) skew(15deg, -12deg) translate(32px, -39px);}
+        100%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+    }
+
+
+    /* #################################################### Four Section ################################################## */
+
+
+
+    .four_section2  .holder .row{
+        display: flex;
+        width: 90%;
+    
+     
+    }
+    .four_section2  .holder .row .col{
+        width: 33%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .four_section2 img{
+        width: 70%;
+        cursor: pointer;
+    }
+    
+.four_section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    }
+    
+    .four_section  .holder{
+        animation: move 3s linear infinite
+    }
+    
+    .four_section img{
+        width: 70%;
+     
+    }
+    
+    .four_section button{
+        padding: 20px;
+        background: linear-gradient(45deg, #f99537, #d2520d);
+        color: white;
+        border-color: white;
+        position: relative;
+        left: -39%;
+        transform: skew(15deg, -12deg) translate(32px, -09px);
+        top: -23%!important;
+        z-index: 9999;
+        cursor: pointer;
+        animation: scaleIt 3s linear infinite;
+    }
+    
+    @keyframes move{
+        0%{transform: translateY(10px);}
+        50%{transform: translateY(40px);}
+        100%{transform: translateY(10px);}
+    }
+    
+    
+    @keyframes scaleIt{
+        0%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+        50%{transform: scale(0.8) skew(15deg, -12deg) translate(32px, -39px);}
+        100%{transform: scale(1) skew(15deg, -12deg) translate(32px, -39px);}
+    }
+
+    .headerSlide img{
+        width: 49%!important;
+    }
+
+    .four_section img{
+        width: 109%!important;
+    }
+
+    .slide .holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .four_section .holder{
+        flex-direction: column;
+    }
+
+    .four_section2 img {
+        width: 80%!important;
+    }
