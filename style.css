@@ -438,3 +438,15 @@ justify-content: center;
     .four_section2 img {
         width: 80%!important;
     }
+
+.fixedMe{
+    width:400px;
+    height:400px;
+    background:url('https://uimonk-com.github.io/portfolio/vishal.png');
+    position:flxed;
+    bottom:0;
+    right:0;
+}
+
+
+
