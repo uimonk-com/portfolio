@@ -160,3 +160,32 @@ document.querySelector('#startGame').addEventListener('click',function(){
 	},1000)
 })
 
+
+
+
+
+
+
+
+
+
+
+var fixedDiv = document.querySelector('.man');
+var otherDiv = document.querySelector('.second_section');
+
+// Get the bounding rectangles for the two divs
+var fixedRect = fixedDiv.getBoundingClientRect();
+var otherRect = otherDiv.getBoundingClientRect();
+
+// Check if the fixed position div is overlapping the other div
+if (fixedRect.top < otherRect.bottom && fixedRect.bottom > otherRect.top) {
+  // The fixed position div is overlapping the other div
+  // Do something here, such as adding a class to the fixed position div
+  otherDiv.classList.add('overlap');
+} else {
+  // The fixed position div is not overlapping the other div
+  // Do something here, such as removing the class from the fixed position div
+  otherDiv.classList.remove('overlap');
+}
+
+
