@@ -141,4 +141,16 @@ function checkKeyUp(e) {
 
 document.addEventListener('wheel', function(e) {
   e.preventDefault();
+      alert('press left or right arrow in keyboard')
 }, { passive: false });
+
+
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 38 || e.keyCode == 40) {
+    e.preventDefault();
+      alert('press left or right arrow in keyboard')
+  }
+});
+
+
