@@ -199,7 +199,7 @@ animation:boom 1s linear infinite }
 
 @keyframes walkRev {
     0%{
-        background-position: -759px;
+        background-position: -750px;
     }
     100%{
         background-position: 0px;
