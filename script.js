@@ -153,4 +153,8 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+	document.querySelector('#man').style.display='none'
+document.querySelector('#startGame').addEventListener('click',function(){
+	document.querySelector('#man').style.display='block'
+})
 
