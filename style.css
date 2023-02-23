@@ -40,7 +40,7 @@ animation:boom 1s linear infinite }
     bottom: 0;
 }
 .wrapper{
-    width: 696vw;
+    width: 997vw;
     height: 206vh;
     display: flex;
     flex-direction: row;
