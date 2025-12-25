@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 *{
     padding: 0;
@@ -63,31 +63,31 @@ animation:boom 1s linear infinite }
 }
 
 .second_section{
-    background: url('mario.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 .slide2{
-    background: url('slide2.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 
 .third_section{
-    background: url('slide3.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 
 .four_section{
-    background: url('slide4.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 
 .four_section2{
-    background: url('slide5.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 
 .third_section2{
-    background: url('mario.jpg');
+    background: url('banners/full.png');
     background-size: 100% 100%;
 }
 
@@ -183,7 +183,7 @@ animation:boom 1s linear infinite }
     margin: auto;
     
     position: absolute;
-    bottom: 12.5%;
+    bottom: 7.5%;
     left: 15%;
 }
 
@@ -459,3 +459,36 @@ justify-content: center;
 
 
 
+
+
+.vishal{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.vishal .row11 {width: 100%;}
+.vishal .row22 {width: 100%;}
+.vishal .row11 .col11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vishal .row11 .col11 img{
+    width: 70%;
+}
+.vishal .row22 .col22 img{
+    width: 70%;
+}
+
+.vishal a{
+    transition: 0.5s;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.vishal a:hover{
+    transform:scale(1.1)
+}
