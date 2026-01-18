@@ -504,7 +504,7 @@ justify-content: center;
 
 
 .vishalMob{display: flex;}
-.vishalMob .holder{width: 60%; display: flex;flex-direction: row;}
+.vishalMob .holder{width: 73%; display: flex;flex-direction: row;}
 .vishalMob .meContainer{width: 40%;}
 .vishalMob .meContainer video{width: 100%;}
 .vishalMob .mob1{width: 30%;    width: 30%;
