@@ -500,3 +500,15 @@ justify-content: center;
 .vishal a:hover{
     transform:scale(1.1)
 }
+
+
+
+.vishalMob{display: flex;}
+.vishalMob .holder{width: 60%; display: flex;flex-direction: row;}
+.vishalMob .meContainer{width: 40%;}
+.vishalMob .meContainer video{width: 100%;}
+.vishalMob .mob1{width: 30%;    width: 30%;
+    margin-left: 60px;}
+.vishalMob .mob2{width: 30%;}
+.vishalMob .mob2 video{width: 100%;}
+.vishalMob .mob1 video{width: 100%;}
