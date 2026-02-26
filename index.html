@@ -4,13 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+    html, body {
+    touch-action: manipulation;
+}
+
+.left, .right, button, div {
+    touch-action: manipulation;
+}
+
+html, body {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.left, .right {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
 
 
-    <style>
+
         .commingSoon {
             margin-top: -12% !important;
         }
@@ -50,6 +70,10 @@
             height: 100px;
             width: 100vw;
         }
+
+
+
+     
     </style>
 
 
@@ -96,7 +120,292 @@
 
             width: 300px !important;
         }
+
+
+
+
+
+          @media screen and (max-width:768px){
+                    .outer_wrapper {
+                         height: 160vh!important;
+                     }
+
+
+                     .slide { 
+                        width: 100vw; 
+                    }
+
+
+                    .wrapper {
+    width: 3400vw; 
+}
+
+.welcomeMan { 
+    width: 140px !important;
+}
+ 
+
+.man {
+     
+    display: block!important;
+}
+
+ 
+
+
+  .slide .holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.vishalVideo video{
+      width: 149%!important;
+}
+
+.secVishalVideo video{
+     width: 150%!important;
+}
+
+.thirdVishalVideo video{
+        width: 200% !important;
+}
+
+.FourVishalVideo video{
+     width: 150% !important;
+}
+
+.firstSlide{
+    width: 100vw;
+}
+
+
+        .start_intro {
+    position: absolute;
+    top: 61%;
+    left: 64%;
+    transform: translate(-50%, -50%) scale(0.4);
+    text-align: center;
+    background: url(intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 25px;
+}
+        
+.commingSoon {
+    margin-top: 0% !important;
+        display: none;
+}
+
+
+ /* .firstSlide .start_intro{
+    display: none!important;
+ }
+
+ .firstSlide .startGame{
+    display: none!important;
+ }
+
+  .firstSlide img{
+    display: none!important;
+ } */
+
+ .fixedMe{
+    display: none;
+ }
+
+ .vishalMob .meContainer {
+    width: 100%;
+}
+.vishalMob .mob1{
+    width: 50%;
+}
+.vishalMob .mob2{
+    width: 50%;
+}
+
+
+    .vishalMob .meContainer.vishalVidel video{width: 110%;}
+                    .vishalMob .mob1.vishalVidel video{width: 150%;}
+                    .vishalMob .mob2.vishalVidel video{width: 150%;}
+
+.hideOnMob{
+    display: none!important;
+}
+.vishal {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 15%;
+    top: 52%;
+}
+
+.vishal .row11 .col11 video{
+        width: 130px;
+}
+
+.vishal .row11 .col22 video{
+        width: 130px;
+}
+
+.vishal .row22 .col22 video {
+    /* width: 166%; */
+}
+
+.mycerti{
+    display: none!important;
+}
+
+.mySkill{
+     display: none!important;
+}
+
+.myDesign{
+    display: none;
+}
+
+
+.man {
+               background: url(man2.png) no-repeat;
+        width: 48px;
+        height: 100px;
+        margin: auto;
+        position: absolute;
+        bottom: 42%;
+        left: 15%;
+                left: 15%;
+
+            }
+
+
+            .rev_manAnimation{
+    background: url('man3.png') no-repeat;
+    animation: walkRev 1s  infinite steps(8);
+   width:47px;
+}
+
+
+@keyframes walkRev {
+    0%{
+        background-position: -385px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+
+
+
+@keyframes walk {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -385px;
+    }
+}
+
+.stickyBtn{
+          position: fixed;
+        bottom: 53%;
+        width: 100%;
+        /* background: red; */
+        height: 100px;
+        z-index: 9999999;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transform: scale(0.7) translateY(160px);
+        
+    
+}
+
+.stickyBtn .row1 p{
+    color: white;
+    text-align: center;
+}
+
+.stickyBtn .row1 p.sec{
+font-size: 160%;
+padding-bottom: 10px;
+}
+
+ 
+
+.stickyBtn .row2{
+    width: 100%;
+       display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.stickyBtn .left, .stickyBtn .right{
+          width: 90px;
+        height: 90px;
+        background-color: #ffc500;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+
+
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent; 
+    user-select: none;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    outline: none; 
+    cursor: pointer;
+
+ 
+}
+
+.outer_wrapper, .wrapper{
+height: 100vh!important;
+}
+
+.wrapper {
+    width: 1700vw;
+    height: 206vh;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+
+body {
+    height: 80vh!important;
+    
+}
+
+
+.start_intro{
+    display: none!important;
+}
+
+
+        }
+
+
+                
+          
     </style>
+    
 </head>
 
 <body>
@@ -105,7 +414,7 @@
 
 
 
-            <div class="first_section slide" style="display:block">
+            <div class="first_section slide firstSlide" style="display:block">
                 <div class="start_intro">
                     <h1>UiMonk Portfolio</h1>
                     <button id="startGame">Click this button to Start <i class="fa fa-chevron-right"
@@ -123,20 +432,7 @@
 
 
  
-
-            <div class="third_section slide headerSlide" style="display:block">
-                <div class="holder">
-                     <video src="banners/career.mp4" autoplay muted loop playsinline preload="auto" style="width: 100%!important;">
-                        </video>
-
-                </div>
-                <!-- <img src="showcase/third.png" style="width:300px" class="welcomeMan" alt=""> -->
-            </div>
- 
-
-
-
-            <div class="second_section slide headerSlide slide2" style="display:block">
+            <div class="second_section slide headerSlide slide2 vishalVideo" style="display:block">
 
                 <div class="holder">
                     <!-- <img src="heading/myttols.png" alt=""> -->
@@ -147,50 +443,54 @@
                 <!-- <img src="showcase/second.png" style="width:300px" class="welcomeMan" alt=""> -->
             </div>
 
-            <div class="second_section slide vishalMob" style="display:block">
+         
+
+            <div class="third_section slide headerSlide secVishalVideo" style="display:block">
                 <div class="holder">
-                    <!-- <div class="row">
-                    <div class="col">
-                        <img src="skills/1.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="skills/2.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="skills/3.png" alt="">
-                    </div>
+                     <video src="banners/whoisuimonk.mp4" autoplay muted loop playsinline preload="auto" style="width: 80%;">
+                        </video>
+
+                </div>
+                <!-- <img src="showcase/third.png" style="width:300px" class="welcomeMan" alt=""> -->
+            </div>
  
-                   </div>
-                   <div class="row">
-                    <div class="col">
-                        <img src="skills/4.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="skills/5.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="skills/6.png" alt="">
-                    </div>
-                   </div> 
-                   <div class="row">
-                    <div class="col">
-                        <img src="skills/7.png" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="skills/8.png" alt="">
-                    </div>
-                   
-                   </div> -->
-                    <div class="meContainer">
+
+                <div class="third_section slide headerSlide thirdVishalVideo" style="display:none">
+                <div class="holder">
+                     <video src="banners/gd.mp4" autoplay muted loop playsinline preload="auto" style="width: 80%;">
+                        </video>
+
+                </div>
+                <!-- <img src="showcase/third.png" style="width:300px" class="welcomeMan" alt=""> -->
+            </div>
+
+
+ 
+       <div class="third_section slide headerSlide FourVishalVideo" style="display:block">
+                <div class="holder">
+                     <video src="banners/career.mp4" autoplay muted loop playsinline preload="auto" style="width: 100%;">
+                        </video>
+
+                </div>
+                <!-- <img src="showcase/third.png" style="width:300px" class="welcomeMan" alt=""> -->
+            </div>
+
+           
+
+               <div class="second_section slide vishalMob hideOnMob" style="display:block">
+                <div class="holder">
+                  
+                 
+                    <div class="meContainer vishalVidel">
                         <video src="banners/me.mp4" autoplay muted loop playsinline preload="auto">
                         </video>
                     </div>
-                    <div class="mob1">
+                    <div class="mob1 vishalVidel">
                         <video src="banners/mob2.mp4" autoplay muted loop playsinline preload="auto">
                         </video>
 
                     </div>
-                    <div class="mob2">
+                    <div class="mob2 vishalVidel">
                         <video src="banners/mob1.mp4" autoplay muted loop playsinline preload="auto">
                         </video>
 
@@ -358,7 +658,7 @@
 
 
 
-            <div class="third_section third_section2 slide" style="display:block">
+            <div class="third_section third_section2 slide mycerti" style="display:block">
                 <div class="holder">
                     <div class="row">
                         <div class="col">
@@ -377,7 +677,7 @@
 
 
 
-            <div class="four_section slide headerSlide">
+            <div class="four_section slide headerSlide mySkill">
                 <div class="holder">
                     <img src="heading/skills.png" alt="">
 
@@ -385,7 +685,7 @@
                 <img src="showcase/fourth.png" style="width:300px" class="welcomeMan" alt="">
             </div>
 
-            <div class="four_section four_section2 slide">
+            <div class="four_section four_section2 slide myDesign">
                 <div class="holder">
                     <div class="row">
                         <div class="col">
@@ -592,16 +892,43 @@
 
     <div class="man" id="man"></div>
 
+    <div class="stickyBtn">
+        <div class="row1">
+            <p>UiMonk Website - check from DESKTOP</p>
+            <p>(You) Mobile users get the trailer version of Website.</p>
+            <p class="sec">Press & Hold Button to Navigate</p>
+        </div>
+        <div class="row2">
+ <div class="left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <div class="right"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+       
+    </div>
+
 
     <div class='fixedMe'></div>
     <div style='height:0;width:0;opacity:0'>
         <audio src="bgm.mp3" autoplay></audio>
     </div>
     <script>
-        window.onload = function () {
-            var audio = document.getElementById("myAudio");
-            audio.play();
+       window.onload = function () {
+
+    const isMobile = window.matchMedia("(max-width:1023px)").matches 
+        || navigator.maxTouchPoints > 0;
+
+    if (!isMobile) {
+
+        var audio = document.getElementById("myAudio");
+
+        if (audio) {
+            audio.play().catch(function(e){
+                console.log("Autoplay blocked:", e);
+            });
         }
+
+    }
+
+};
     </script>
 
 
