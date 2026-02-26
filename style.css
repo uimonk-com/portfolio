@@ -40,7 +40,7 @@ animation:boom 1s linear infinite }
     bottom: 0;
 }
 .wrapper{
-    width: 1500vw;
+    width: 1700vw;
     height: 206vh;
     display: flex;
     flex-direction: row;
@@ -196,6 +196,17 @@ animation:boom 1s linear infinite }
     animation: walkRev 1s  infinite steps(8);
    width:85px;
 }
+
+
+ 
+
+.manAnimation_mob{
+    animation: walk 1s  infinite steps(8);
+}
+
+
+
+
 
 @keyframes walkRev {
     0%{
@@ -512,3 +523,8 @@ justify-content: center;
 .vishalMob .mob2{width: 30%;}
 .vishalMob .mob2 video{width: 100%;}
 .vishalMob .mob1 video{width: 100%;}
+
+
+
+
+
